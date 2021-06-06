@@ -1,17 +1,22 @@
+#include <SoftwareSerial.h>// bib pour l'affichage en moniteur serie 
+//pin arduino relié au pins du pont H
+
 int ENA =10;
 int ENB = 11;
 int IN4 = 5;
 int IN3 = 4;
 int IN2 = 3;
 int IN1 = 2;
+//pin arduino relié au capteurs
 int RT = 7;
 int LT = 8;
 int hrt=6;
 int hlt=9;
+//les valeurs des capteurs 
 int val1,val2,val11,val22;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(9600);// moniteur serie fonctionne en frequence 9600
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
   pinMode(IN3, OUTPUT);
