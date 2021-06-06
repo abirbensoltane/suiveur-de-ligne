@@ -40,10 +40,11 @@ void loop() {
    val2 = digitalRead(LT); 
    val11 = digitalRead(hrt); 
    val22 = digitalRead(hlt); 
-  //Serial.print(val1);
-   Serial.println(val2);
-    //Serial.print(val11);
-   Serial.println(val22);
+  
+  //Serial.print(val1);//affichage valeur du capteur à droite
+  // Serial.println(val2); //affichage valeur du capteur à gauche 
+    //Serial.print(val11);//affichage valeur du capteur  hard right
+  // Serial.println(val22); //affichage valeur du capteur hard left
 
   
    if((val1==0 && val2==1 && val11==1 && val22==1)||(val1==1 && val2==0 && val11==1 && val22==1))
